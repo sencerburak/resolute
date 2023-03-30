@@ -1,0 +1,620 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22BB192729D2578B00F1EA47 /* resolute_uiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BB192629D2578B00F1EA47 /* resolute_uiApp.swift */; };
+		22BB192929D2578B00F1EA47 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BB192829D2578B00F1EA47 /* ContentView.swift */; };
+		22BB192B29D2578D00F1EA47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22BB192A29D2578D00F1EA47 /* Assets.xcassets */; };
+		22BB192E29D2578D00F1EA47 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22BB192D29D2578D00F1EA47 /* Preview Assets.xcassets */; };
+		22BB193929D2578D00F1EA47 /* resolute_uiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BB193829D2578D00F1EA47 /* resolute_uiTests.swift */; };
+		22BB194329D2578D00F1EA47 /* resolute_uiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BB194229D2578D00F1EA47 /* resolute_uiUITests.swift */; };
+		22BB194529D2578D00F1EA47 /* resolute_uiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BB194429D2578D00F1EA47 /* resolute_uiUITestsLaunchTests.swift */; };
+		22BB195729D3B0E700F1EA47 /* SVGKit in Frameworks */ = {isa = PBXBuildFile; productRef = 22BB195629D3B0E700F1EA47 /* SVGKit */; };
+		22BB196129D4D64000F1EA47 /* icon-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 22BB195C29D4D63F00F1EA47 /* icon-4.png */; };
+		22BB196229D4D64000F1EA47 /* icon-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 22BB195D29D4D64000F1EA47 /* icon-5.png */; };
+		22BB196329D4D64000F1EA47 /* icon-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 22BB195E29D4D64000F1EA47 /* icon-3.png */; };
+		22BB196429D4D64000F1EA47 /* icon-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 22BB195F29D4D64000F1EA47 /* icon-1.png */; };
+		22BB196529D4D64000F1EA47 /* icon-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 22BB196029D4D64000F1EA47 /* icon-2.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		22BB193529D2578D00F1EA47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22BB191B29D2578B00F1EA47 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22BB192229D2578B00F1EA47;
+			remoteInfo = "resolute-ui";
+		};
+		22BB193F29D2578D00F1EA47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22BB191B29D2578B00F1EA47 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22BB192229D2578B00F1EA47;
+			remoteInfo = "resolute-ui";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		22BB192329D2578B00F1EA47 /* resolute-ui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "resolute-ui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22BB192629D2578B00F1EA47 /* resolute_uiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resolute_uiApp.swift; sourceTree = "<group>"; };
+		22BB192829D2578B00F1EA47 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		22BB192A29D2578D00F1EA47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		22BB192D29D2578D00F1EA47 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		22BB192F29D2578D00F1EA47 /* resolute_ui.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = resolute_ui.entitlements; sourceTree = "<group>"; };
+		22BB193429D2578D00F1EA47 /* resolute-uiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "resolute-uiTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22BB193829D2578D00F1EA47 /* resolute_uiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resolute_uiTests.swift; sourceTree = "<group>"; };
+		22BB193E29D2578D00F1EA47 /* resolute-uiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "resolute-uiUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22BB194229D2578D00F1EA47 /* resolute_uiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resolute_uiUITests.swift; sourceTree = "<group>"; };
+		22BB194429D2578D00F1EA47 /* resolute_uiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resolute_uiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		22BB195C29D4D63F00F1EA47 /* icon-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-4.png"; sourceTree = "<group>"; };
+		22BB195D29D4D64000F1EA47 /* icon-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-5.png"; sourceTree = "<group>"; };
+		22BB195E29D4D64000F1EA47 /* icon-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-3.png"; sourceTree = "<group>"; };
+		22BB195F29D4D64000F1EA47 /* icon-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-1.png"; sourceTree = "<group>"; };
+		22BB196029D4D64000F1EA47 /* icon-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-2.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22BB192029D2578B00F1EA47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22BB195729D3B0E700F1EA47 /* SVGKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22BB193129D2578D00F1EA47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22BB193B29D2578D00F1EA47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22BB191A29D2578B00F1EA47 = {
+			isa = PBXGroup;
+			children = (
+				22BB192529D2578B00F1EA47 /* resolute-ui */,
+				22BB193729D2578D00F1EA47 /* resolute-uiTests */,
+				22BB194129D2578D00F1EA47 /* resolute-uiUITests */,
+				22BB192429D2578B00F1EA47 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		22BB192429D2578B00F1EA47 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22BB192329D2578B00F1EA47 /* resolute-ui.app */,
+				22BB193429D2578D00F1EA47 /* resolute-uiTests.xctest */,
+				22BB193E29D2578D00F1EA47 /* resolute-uiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22BB192529D2578B00F1EA47 /* resolute-ui */ = {
+			isa = PBXGroup;
+			children = (
+				22BB192629D2578B00F1EA47 /* resolute_uiApp.swift */,
+				22BB192829D2578B00F1EA47 /* ContentView.swift */,
+				22BB192A29D2578D00F1EA47 /* Assets.xcassets */,
+				22BB195F29D4D64000F1EA47 /* icon-1.png */,
+				22BB196029D4D64000F1EA47 /* icon-2.png */,
+				22BB195E29D4D64000F1EA47 /* icon-3.png */,
+				22BB195C29D4D63F00F1EA47 /* icon-4.png */,
+				22BB195D29D4D64000F1EA47 /* icon-5.png */,
+				22BB192F29D2578D00F1EA47 /* resolute_ui.entitlements */,
+				22BB192C29D2578D00F1EA47 /* Preview Content */,
+			);
+			path = "resolute-ui";
+			sourceTree = "<group>";
+		};
+		22BB192C29D2578D00F1EA47 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				22BB192D29D2578D00F1EA47 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		22BB193729D2578D00F1EA47 /* resolute-uiTests */ = {
+			isa = PBXGroup;
+			children = (
+				22BB193829D2578D00F1EA47 /* resolute_uiTests.swift */,
+			);
+			path = "resolute-uiTests";
+			sourceTree = "<group>";
+		};
+		22BB194129D2578D00F1EA47 /* resolute-uiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				22BB194229D2578D00F1EA47 /* resolute_uiUITests.swift */,
+				22BB194429D2578D00F1EA47 /* resolute_uiUITestsLaunchTests.swift */,
+			);
+			path = "resolute-uiUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22BB192229D2578B00F1EA47 /* resolute-ui */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22BB194829D2578D00F1EA47 /* Build configuration list for PBXNativeTarget "resolute-ui" */;
+			buildPhases = (
+				22BB191F29D2578B00F1EA47 /* Sources */,
+				22BB192029D2578B00F1EA47 /* Frameworks */,
+				22BB192129D2578B00F1EA47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "resolute-ui";
+			packageProductDependencies = (
+				22BB195629D3B0E700F1EA47 /* SVGKit */,
+			);
+			productName = "resolute-ui";
+			productReference = 22BB192329D2578B00F1EA47 /* resolute-ui.app */;
+			productType = "com.apple.product-type.application";
+		};
+		22BB193329D2578D00F1EA47 /* resolute-uiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22BB194B29D2578D00F1EA47 /* Build configuration list for PBXNativeTarget "resolute-uiTests" */;
+			buildPhases = (
+				22BB193029D2578D00F1EA47 /* Sources */,
+				22BB193129D2578D00F1EA47 /* Frameworks */,
+				22BB193229D2578D00F1EA47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22BB193629D2578D00F1EA47 /* PBXTargetDependency */,
+			);
+			name = "resolute-uiTests";
+			productName = "resolute-uiTests";
+			productReference = 22BB193429D2578D00F1EA47 /* resolute-uiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		22BB193D29D2578D00F1EA47 /* resolute-uiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22BB194E29D2578D00F1EA47 /* Build configuration list for PBXNativeTarget "resolute-uiUITests" */;
+			buildPhases = (
+				22BB193A29D2578D00F1EA47 /* Sources */,
+				22BB193B29D2578D00F1EA47 /* Frameworks */,
+				22BB193C29D2578D00F1EA47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22BB194029D2578D00F1EA47 /* PBXTargetDependency */,
+			);
+			name = "resolute-uiUITests";
+			productName = "resolute-uiUITests";
+			productReference = 22BB193E29D2578D00F1EA47 /* resolute-uiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22BB191B29D2578B00F1EA47 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					22BB192229D2578B00F1EA47 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					22BB193329D2578D00F1EA47 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 22BB192229D2578B00F1EA47;
+					};
+					22BB193D29D2578D00F1EA47 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 22BB192229D2578B00F1EA47;
+					};
+				};
+			};
+			buildConfigurationList = 22BB191E29D2578B00F1EA47 /* Build configuration list for PBXProject "resolute-ui" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 22BB191A29D2578B00F1EA47;
+			packageReferences = (
+				22BB195529D3B0E700F1EA47 /* XCRemoteSwiftPackageReference "SVGKit" */,
+			);
+			productRefGroup = 22BB192429D2578B00F1EA47 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22BB192229D2578B00F1EA47 /* resolute-ui */,
+				22BB193329D2578D00F1EA47 /* resolute-uiTests */,
+				22BB193D29D2578D00F1EA47 /* resolute-uiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22BB192129D2578B00F1EA47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22BB196229D4D64000F1EA47 /* icon-5.png in Resources */,
+				22BB192E29D2578D00F1EA47 /* Preview Assets.xcassets in Resources */,
+				22BB196429D4D64000F1EA47 /* icon-1.png in Resources */,
+				22BB192B29D2578D00F1EA47 /* Assets.xcassets in Resources */,
+				22BB196529D4D64000F1EA47 /* icon-2.png in Resources */,
+				22BB196129D4D64000F1EA47 /* icon-4.png in Resources */,
+				22BB196329D4D64000F1EA47 /* icon-3.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22BB193229D2578D00F1EA47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22BB193C29D2578D00F1EA47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22BB191F29D2578B00F1EA47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22BB192929D2578B00F1EA47 /* ContentView.swift in Sources */,
+				22BB192729D2578B00F1EA47 /* resolute_uiApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22BB193029D2578D00F1EA47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22BB193929D2578D00F1EA47 /* resolute_uiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22BB193A29D2578D00F1EA47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22BB194329D2578D00F1EA47 /* resolute_uiUITests.swift in Sources */,
+				22BB194529D2578D00F1EA47 /* resolute_uiUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		22BB193629D2578D00F1EA47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22BB192229D2578B00F1EA47 /* resolute-ui */;
+			targetProxy = 22BB193529D2578D00F1EA47 /* PBXContainerItemProxy */;
+		};
+		22BB194029D2578D00F1EA47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22BB192229D2578B00F1EA47 /* resolute-ui */;
+			targetProxy = 22BB193F29D2578D00F1EA47 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		22BB194629D2578D00F1EA47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		22BB194729D2578D00F1EA47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		22BB194929D2578D00F1EA47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "resolute-ui/resolute_ui.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"resolute-ui/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "okumus.resolute-ui";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		22BB194A29D2578D00F1EA47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "resolute-ui/resolute_ui.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"resolute-ui/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "okumus.resolute-ui";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		22BB194C29D2578D00F1EA47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "okumus.resolute-uiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/resolute-ui.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/resolute-ui";
+			};
+			name = Debug;
+		};
+		22BB194D29D2578D00F1EA47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "okumus.resolute-uiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/resolute-ui.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/resolute-ui";
+			};
+			name = Release;
+		};
+		22BB194F29D2578D00F1EA47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "okumus.resolute-uiUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "resolute-ui";
+			};
+			name = Debug;
+		};
+		22BB195029D2578D00F1EA47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "okumus.resolute-uiUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "resolute-ui";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22BB191E29D2578B00F1EA47 /* Build configuration list for PBXProject "resolute-ui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22BB194629D2578D00F1EA47 /* Debug */,
+				22BB194729D2578D00F1EA47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22BB194829D2578D00F1EA47 /* Build configuration list for PBXNativeTarget "resolute-ui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22BB194929D2578D00F1EA47 /* Debug */,
+				22BB194A29D2578D00F1EA47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22BB194B29D2578D00F1EA47 /* Build configuration list for PBXNativeTarget "resolute-uiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22BB194C29D2578D00F1EA47 /* Debug */,
+				22BB194D29D2578D00F1EA47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22BB194E29D2578D00F1EA47 /* Build configuration list for PBXNativeTarget "resolute-uiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22BB194F29D2578D00F1EA47 /* Debug */,
+				22BB195029D2578D00F1EA47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		22BB195529D3B0E700F1EA47 /* XCRemoteSwiftPackageReference "SVGKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SVGKit/SVGKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		22BB195629D3B0E700F1EA47 /* SVGKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22BB195529D3B0E700F1EA47 /* XCRemoteSwiftPackageReference "SVGKit" */;
+			productName = SVGKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 22BB191B29D2578B00F1EA47 /* Project object */;
+}
