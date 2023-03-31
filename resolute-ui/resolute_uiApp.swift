@@ -37,7 +37,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
            
         AppDelegate.popover.contentSize = NSSize(width: 360, height: 100)
-        AppDelegate.popover.behavior = .transient
+        AppDelegate.popover.behavior = .applicationDefined
         AppDelegate.popover.contentViewController = NSHostingController(rootView: ContentView())
 
         statusBarItem.button?.target = self
@@ -51,6 +51,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             AppDelegate.popover.performClose(sender)
         } else {
             AppDelegate.popover.show(relativeTo: button!.bounds, of: button!, preferredEdge: .minY)
+            NSApp.activate(ignoringOtherApps: true) // Activate the app when showing the popover
+            AppDelegate.popover.contentViewController?.view.window?.makeKey() // Make the popover key
         }
     }
 }
