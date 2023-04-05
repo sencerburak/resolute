@@ -19,6 +19,43 @@ struct resolute_uiApp: App {
     }
 }
 
+struct DisplayProfile: Codable {
+    var displayID: CGDirectDisplayID
+    var modeID: UInt32
+}
+
+class DisplayProfileManager {
+    private static let profilesKey = "displayProfiles"
+
+    static func saveProfile(_ profile: DisplayProfile) {
+        var existingProfiles = loadProfiles() ?? []
+        existingProfiles.append(profile)
+        saveProfiles(existingProfiles)
+    }
+
+    static func loadProfiles() -> [DisplayProfile]? {
+        if let data = UserDefaults.standard.data(forKey: profilesKey) {
+            do {
+                let profiles = try JSONDecoder().decode([DisplayProfile].self, from: data)
+                return profiles
+            } catch {
+                print("Error decoding profiles: \(error)")
+                return nil
+            }
+        }
+        return nil
+    }
+
+    private static func saveProfiles(_ profiles: [DisplayProfile]) {
+        do {
+            let data = try JSONEncoder().encode(profiles)
+            UserDefaults.standard.set(data, forKey: profilesKey)
+        } catch {
+            print("Error encoding profiles: \(error)")
+        }
+    }
+}
+
 class AppDelegate: NSObject, NSApplicationDelegate {
     var statusBarItem: NSStatusItem!
     static var popover = NSPopover()
@@ -35,7 +72,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             button.action = #selector(togglePopover)
         }
 
-        AppDelegate.popover.contentSize = NSSize(width: 360, height: 100)
+        AppDelegate.popover.contentSize = NSSize(width: 360, height: 200)
         AppDelegate.popover.behavior = .applicationDefined
         AppDelegate.popover.contentViewController = NSHostingController(rootView: ContentView())
 
@@ -68,17 +105,23 @@ func listAvailableDisplays() {
     let screens = NSScreen.screens
 
     for (index, screen) in screens.enumerated() {
+        print("  Name: \(screen.localizedName)")
         let displayID = getDisplayID(for: screen)
         print("Display \(index + 1):")
         print("  ID: \(displayID)")
-        print("  Name: \(screen.localizedName)")
         print("  Frame: \(screen.frame)")
         print("  Visible Frame: \(screen.visibleFrame)")
         print("  DPI: \(screen.backingScaleFactor)")
         print("  Resolution: \(screen.frame.size.width)x\(screen.frame.size.height)")
         print("  Max Refresh Rate: \(screen.maximumRefreshInterval)Hz")
-        print("  Display Modes: \(getAvailableDisplayModes(for: screen))")
-        print("")
+        print("  Display Modes:")
+
+        for mode in getAvailableDisplayModes(for: screen) {
+            print("\(mode.ioDisplayModeID), ", terminator: "")
+//            print("")
+        }
+        
+        let me = "be"
     }
 }
 
@@ -102,6 +145,7 @@ func iconForDisplayMode(mode: CGDisplayMode) -> Image {
 
 func displayModeButtons(displayModes: [CGDisplayMode], screen: NSScreen) -> some View {
     return HStack {
+        Spacer()
         ForEach(displayModes, id: \.self) { mode in
             iconForDisplayMode(mode: mode)
                 .resizable()
@@ -117,6 +161,7 @@ func displayModeButtons(displayModes: [CGDisplayMode], screen: NSScreen) -> some
                         }
                 )
         }
+        Spacer()
     }
 }
 
@@ -143,7 +188,7 @@ func getAvailableDisplayModes(for screen: NSScreen) -> [CGDisplayMode] {
         return getAvailableScaledDisplayModes(screen: screen)
     }
     else {
-        return getAvailableScaledDisplayModes(screen: screen, checkResolutionFactor: false)
+        return getAvailableScaledDisplayModes(screen: screen, checkResolutionFactor: true)
     }
 }
 
@@ -174,6 +219,12 @@ func getAvailableScaledDisplayModes(screen: NSScreen, checkResolutionFactor: Boo
         }
     }
     return availableModes
+}
+
+func getCurrentDisplayMode(for screen: NSScreen) -> CGDisplayMode? {
+    let displayID = getDisplayID(for: screen)
+    let displayMode = CGDisplayCopyDisplayMode(displayID)
+    return displayMode
 }
 
 enum DisplayModeError: Error, CustomStringConvertible {
